@@ -168,6 +168,7 @@
             this.btnCompras.TabIndex = 2;
             this.btnCompras.Text = "Compras";
             this.btnCompras.UseVisualStyleBackColor = false;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // btnVendas
             // 
@@ -187,6 +188,7 @@
             this.btnVendas.TabIndex = 1;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = false;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
             // btnClientes
             // 
@@ -210,7 +212,6 @@
             // 
             // panelConteudo
             // 
-            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(180, 74);
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(620, 386);

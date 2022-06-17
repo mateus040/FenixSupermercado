@@ -83,7 +83,17 @@ namespace _211069_211090
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            AbrirFormNoPapel<Form2>();
+        }
 
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPapel <Form3>();
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPapel<Form4>();
         }
     }
 }
