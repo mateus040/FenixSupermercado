@@ -80,5 +80,10 @@ namespace _211069_211090
                 formulario.BringToFront();
             }
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
