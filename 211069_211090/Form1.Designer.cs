@@ -35,16 +35,18 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnContas = new System.Windows.Forms.Button();
+            this.btnCompras = new System.Windows.Forms.Button();
+            this.btnVendas = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.panelConteudo = new System.Windows.Forms.Panel();
             this.panelCabecalho.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCabecalho
             // 
-            this.panelCabecalho.BackColor = System.Drawing.Color.SkyBlue;
+            this.panelCabecalho.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panelCabecalho.Controls.Add(this.label1);
             this.panelCabecalho.Controls.Add(this.btnMaximizar);
             this.panelCabecalho.Controls.Add(this.btnMinimizar);
@@ -119,77 +121,106 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SkyBlue;
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnContas);
+            this.panelMenu.Controls.Add(this.btnCompras);
+            this.panelMenu.Controls.Add(this.btnVendas);
+            this.panelMenu.Controls.Add(this.btnClientes);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 74);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(180, 376);
+            this.panelMenu.Size = new System.Drawing.Size(180, 386);
             this.panelMenu.TabIndex = 1;
             // 
-            // button3
+            // btnContas
             // 
-            this.button3.BackColor = System.Drawing.Color.SkyBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(6, 156);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 45);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Compras";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnContas.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnContas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnContas.FlatAppearance.BorderSize = 0;
+            this.btnContas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnContas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnContas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContas.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContas.ForeColor = System.Drawing.Color.Black;
+            this.btnContas.Image = ((System.Drawing.Image)(resources.GetObject("btnContas.Image")));
+            this.btnContas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContas.Location = new System.Drawing.Point(3, 286);
+            this.btnContas.Name = "btnContas";
+            this.btnContas.Size = new System.Drawing.Size(190, 50);
+            this.btnContas.TabIndex = 3;
+            this.btnContas.Text = "Contas";
+            this.btnContas.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnCompras
             // 
-            this.button2.BackColor = System.Drawing.Color.SkyBlue;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(6, 82);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Vendas";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCompras.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnCompras.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompras.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompras.ForeColor = System.Drawing.Color.Black;
+            this.btnCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnCompras.Image")));
+            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompras.Location = new System.Drawing.Point(6, 204);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(190, 45);
+            this.btnCompras.TabIndex = 2;
+            this.btnCompras.Text = "Compras";
+            this.btnCompras.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnVendas
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Clientes";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnVendas.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnVendas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnVendas.FlatAppearance.BorderSize = 0;
+            this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendas.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendas.ForeColor = System.Drawing.Color.Black;
+            this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
+            this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendas.Location = new System.Drawing.Point(6, 119);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(180, 45);
+            this.btnVendas.TabIndex = 1;
+            this.btnVendas.Text = "Vendas";
+            this.btnVendas.UseVisualStyleBackColor = false;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnClientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(3, 35);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(180, 45);
+            this.btnClientes.TabIndex = 0;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            // 
+            // panelConteudo
+            // 
+            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelConteudo.Location = new System.Drawing.Point(180, 74);
+            this.panelConteudo.Name = "panelConteudo";
+            this.panelConteudo.Size = new System.Drawing.Size(620, 386);
+            this.panelConteudo.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 460);
+            this.Controls.Add(this.panelConteudo);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelCabecalho);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -211,9 +242,11 @@
         private System.Windows.Forms.Button btnMaximizar;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnCompras;
+        private System.Windows.Forms.Button btnVendas;
+        private System.Windows.Forms.Button btnContas;
+        private System.Windows.Forms.Panel panelConteudo;
     }
 }
 

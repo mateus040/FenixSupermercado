@@ -17,7 +17,7 @@ namespace _211069_211090
         public const int HT_CAPTION = 0x2;
 
         [DllImport("user32.dll")]
-        private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+        private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
@@ -46,6 +46,39 @@ namespace _211069_211090
             this.WindowState = FormWindowState.Minimized;
             btnMinimizar.Visible = true;
             btnMaximizar.Visible = true;
+        }
+
+        private void panelCabecalho_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void AbrirFormNoPapel<Forms>() where Forms : Form, new()
+        {
+            Form formulario;
+            formulario = panelConteudo.Controls.OfType<Forms>().FirstOrDefault();
+
+            if (formulario == null)
+            {
+                formulario = new Forms();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(formulario);
+                panelConteudo.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                if (formulario.WindowState == FormWindowState.Minimized)
+                    formulario.WindowState = FormWindowState.Normal;
+                formulario.BringToFront();
+            }
         }
     }
 }
