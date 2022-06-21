@@ -16,5 +16,14 @@ namespace _211069_211090
         {
             InitializeComponent();
         }
+
+        private void btn_limpar_Click(object sender, EventArgs e)
+        {
+            txt_codigo.Clear();
+            txt_nome_produto.Clear();
+            txt_quantidade.Clear();
+            txt_valor.Clear();
+           
+        }
     }
 }

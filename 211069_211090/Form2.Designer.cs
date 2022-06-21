@@ -56,6 +56,7 @@
             this.label6.Size = new System.Drawing.Size(247, 32);
             this.label6.TabIndex = 17;
             this.label6.Text = "Cadastro de Clientes";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txt_nome
             // 
@@ -178,6 +179,7 @@
             this.groupBox1.Size = new System.Drawing.Size(377, 264);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_cadastrar
             // 
