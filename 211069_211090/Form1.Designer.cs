@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelCabecalho = new System.Windows.Forms.Panel();
+            this.btn_restaurar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
-            this.btn_restaurar = new System.Windows.Forms.Button();
             this.panelCabecalho.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,25 @@
             this.panelCabecalho.Size = new System.Drawing.Size(800, 74);
             this.panelCabecalho.TabIndex = 0;
             this.panelCabecalho.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseDown);
+            this.panelCabecalho.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseMove);
             this.panelCabecalho.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseUp);
+            // 
+            // btn_restaurar
+            // 
+            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_restaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_restaurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_restaurar.FlatAppearance.BorderSize = 0;
+            this.btn_restaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_restaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn_restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar.Image")));
+            this.btn_restaurar.Location = new System.Drawing.Point(609, 14);
+            this.btn_restaurar.Name = "btn_restaurar";
+            this.btn_restaurar.Size = new System.Drawing.Size(50, 50);
+            this.btn_restaurar.TabIndex = 4;
+            this.btn_restaurar.UseVisualStyleBackColor = true;
+            this.btn_restaurar.Click += new System.EventHandler(this.btn_restaurar_Click);
             // 
             // label1
             // 
@@ -221,23 +239,6 @@
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(620, 449);
             this.panelConteudo.TabIndex = 2;
-            // 
-            // btn_restaurar
-            // 
-            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_restaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_restaurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_restaurar.FlatAppearance.BorderSize = 0;
-            this.btn_restaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_restaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btn_restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar.Image")));
-            this.btn_restaurar.Location = new System.Drawing.Point(609, 14);
-            this.btn_restaurar.Name = "btn_restaurar";
-            this.btn_restaurar.Size = new System.Drawing.Size(50, 50);
-            this.btn_restaurar.TabIndex = 4;
-            this.btn_restaurar.UseVisualStyleBackColor = true;
-            this.btn_restaurar.Click += new System.EventHandler(this.btn_restaurar_Click);
             // 
             // Form1
             // 

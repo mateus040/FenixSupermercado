@@ -13,10 +13,8 @@ namespace _211069_211090
 {
     public partial class Form1 : Form
     {
-
         bool mover = false;
-        Point posicao_inicial;
-
+        Point posicao_incial;
 
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -100,12 +98,21 @@ namespace _211069_211090
         private void panelCabecalho_MouseDown(object sender, MouseEventArgs e)
         {
             mover = true;
-            posicao_inicial = new Point(e.X, e.Y);
+            posicao_incial = new Point(e.X, e.Y);
         }
 
         private void panelCabecalho_MouseUp(object sender, MouseEventArgs e)
         {
             mover = false;
+        }
+
+        private void panelCabecalho_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mover)
+            {
+                Point novo = PointToScreen(e.Location);
+                Location = new Point(novo.X - posicao_incial.X, novo.Y - posicao_incial.Y);
+            }
         }
     }
 }
