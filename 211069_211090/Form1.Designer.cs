@@ -145,7 +145,7 @@
             this.btnContas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContas.Location = new System.Drawing.Point(3, 286);
             this.btnContas.Name = "btnContas";
-            this.btnContas.Size = new System.Drawing.Size(190, 50);
+            this.btnContas.Size = new System.Drawing.Size(174, 50);
             this.btnContas.TabIndex = 3;
             this.btnContas.Text = "Contas";
             this.btnContas.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@
             this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCompras.Location = new System.Drawing.Point(6, 204);
             this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(190, 45);
+            this.btnCompras.Size = new System.Drawing.Size(187, 45);
             this.btnCompras.TabIndex = 2;
             this.btnCompras.Text = "Compras";
             this.btnCompras.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendas.Location = new System.Drawing.Point(6, 119);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(180, 45);
+            this.btnVendas.Size = new System.Drawing.Size(177, 45);
             this.btnVendas.TabIndex = 1;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = false;
@@ -212,6 +212,7 @@
             // 
             // panelConteudo
             // 
+            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(180, 74);
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(620, 386);
