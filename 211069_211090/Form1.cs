@@ -13,6 +13,12 @@ namespace _211069_211090
 {
     public partial class Form1 : Form
     {
+
+        bool mover = false;
+        Point posicao_inicial;
+
+
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -35,9 +41,7 @@ namespace _211069_211090
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            btnMinimizar.Visible = true;
-            btnMaximizar.Visible = true;
-
+            btn_restaurar.Visible = true;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -48,13 +52,12 @@ namespace _211069_211090
             btnMaximizar.Visible = true;
         }
 
-        private void panelCabecalho_MouseMove(object sender, MouseEventArgs e)
+        private void btn_restaurar_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            this.WindowState = FormWindowState.Normal;
+            btn_restaurar.Visible = false;
+            btnMaximizar.Visible = true;
+
         }
 
         private void AbrirFormNoPapel<Forms>() where Forms : Form, new()
@@ -66,8 +69,6 @@ namespace _211069_211090
             {
                 formulario = new Forms();
                 formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
                 panelConteudo.Controls.Add(formulario);
                 panelConteudo.Tag = formulario;
                 formulario.Show();
@@ -94,6 +95,17 @@ namespace _211069_211090
         private void btnCompras_Click(object sender, EventArgs e)
         {
             AbrirFormNoPapel<Form4>();
+        }
+
+        private void panelCabecalho_MouseDown(object sender, MouseEventArgs e)
+        {
+            mover = true;
+            posicao_inicial = new Point(e.X, e.Y);
+        }
+
+        private void panelCabecalho_MouseUp(object sender, MouseEventArgs e)
+        {
+            mover = false;
         }
     }
 }

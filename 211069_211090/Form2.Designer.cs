@@ -188,6 +188,7 @@
             this.btn_cadastrar.TabIndex = 31;
             this.btn_cadastrar.Text = "Cadastrar";
             this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // btn_limpar
             // 
@@ -209,6 +210,7 @@
             this.Controls.Add(this.btn_cadastrar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

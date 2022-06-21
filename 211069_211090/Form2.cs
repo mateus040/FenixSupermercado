@@ -17,6 +17,7 @@ namespace _211069_211090
             InitializeComponent();
         }
 
+
         private void btn_limpar_Click(object sender, EventArgs e)
         {
             txt_nome.Clear();
@@ -27,6 +28,11 @@ namespace _211069_211090
             txt_cidade.Clear();
 
             txt_nome.Focus();
+        }
+
+        private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

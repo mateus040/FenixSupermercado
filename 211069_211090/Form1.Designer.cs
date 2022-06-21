@@ -40,6 +40,7 @@
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
+            this.btn_restaurar = new System.Windows.Forms.Button();
             this.panelCabecalho.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // panelCabecalho
             // 
             this.panelCabecalho.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panelCabecalho.Controls.Add(this.btn_restaurar);
             this.panelCabecalho.Controls.Add(this.label1);
             this.panelCabecalho.Controls.Add(this.btnMaximizar);
             this.panelCabecalho.Controls.Add(this.btnMinimizar);
@@ -56,6 +58,8 @@
             this.panelCabecalho.Name = "panelCabecalho";
             this.panelCabecalho.Size = new System.Drawing.Size(800, 74);
             this.panelCabecalho.TabIndex = 0;
+            this.panelCabecalho.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseDown);
+            this.panelCabecalho.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseUp);
             // 
             // label1
             // 
@@ -77,7 +81,7 @@
             this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(665, 12);
+            this.btnMaximizar.Location = new System.Drawing.Point(670, 12);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(50, 50);
             this.btnMaximizar.TabIndex = 2;
@@ -94,7 +98,7 @@
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(600, 17);
+            this.btnMinimizar.Location = new System.Drawing.Point(549, 17);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.TabIndex = 1;
@@ -128,7 +132,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 74);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(180, 386);
+            this.panelMenu.Size = new System.Drawing.Size(180, 449);
             this.panelMenu.TabIndex = 1;
             // 
             // btnContas
@@ -215,14 +219,31 @@
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(180, 74);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(620, 386);
+            this.panelConteudo.Size = new System.Drawing.Size(620, 449);
             this.panelConteudo.TabIndex = 2;
+            // 
+            // btn_restaurar
+            // 
+            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_restaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_restaurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_restaurar.FlatAppearance.BorderSize = 0;
+            this.btn_restaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_restaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn_restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar.Image")));
+            this.btn_restaurar.Location = new System.Drawing.Point(609, 14);
+            this.btn_restaurar.Name = "btn_restaurar";
+            this.btn_restaurar.Size = new System.Drawing.Size(50, 50);
+            this.btn_restaurar.TabIndex = 4;
+            this.btn_restaurar.UseVisualStyleBackColor = true;
+            this.btn_restaurar.Click += new System.EventHandler(this.btn_restaurar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 460);
+            this.ClientSize = new System.Drawing.Size(800, 523);
             this.Controls.Add(this.panelConteudo);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelCabecalho);
@@ -250,6 +271,7 @@
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button btnContas;
         private System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.Button btn_restaurar;
     }
 }
 
