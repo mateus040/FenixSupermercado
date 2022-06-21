@@ -51,7 +51,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 8);
+            this.label6.Location = new System.Drawing.Point(277, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(247, 32);
             this.label6.TabIndex = 17;
@@ -174,7 +174,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_nome);
-            this.groupBox1.Location = new System.Drawing.Point(5, 51);
+            this.groupBox1.Location = new System.Drawing.Point(214, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(377, 264);
             this.groupBox1.TabIndex = 30;
@@ -184,7 +184,7 @@
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(52, 336);
+            this.btn_cadastrar.Location = new System.Drawing.Point(261, 336);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -195,7 +195,7 @@
             // btn_limpar
             // 
             this.btn_limpar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(215, 336);
+            this.btn_limpar.Location = new System.Drawing.Point(424, 336);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(115, 38);
             this.btn_limpar.TabIndex = 32;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 401);
+            this.ClientSize = new System.Drawing.Size(799, 401);
             this.Controls.Add(this.btn_limpar);
             this.Controls.Add(this.btn_cadastrar);
             this.Controls.Add(this.groupBox1);
