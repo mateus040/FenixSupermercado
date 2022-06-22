@@ -89,9 +89,10 @@
             // 
             // txt_funcao
             // 
+            this.txt_funcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_funcao.Location = new System.Drawing.Point(215, 193);
             this.txt_funcao.Name = "txt_funcao";
-            this.txt_funcao.Size = new System.Drawing.Size(153, 20);
+            this.txt_funcao.Size = new System.Drawing.Size(153, 22);
             this.txt_funcao.TabIndex = 50;
             // 
             // label9
@@ -106,9 +107,10 @@
             // 
             // txt_cep
             // 
+            this.txt_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cep.Location = new System.Drawing.Point(7, 193);
             this.txt_cep.Name = "txt_cep";
-            this.txt_cep.Size = new System.Drawing.Size(138, 20);
+            this.txt_cep.Size = new System.Drawing.Size(138, 22);
             this.txt_cep.TabIndex = 48;
             // 
             // label8
@@ -123,30 +125,34 @@
             // 
             // txt_endereco
             // 
+            this.txt_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_endereco.Location = new System.Drawing.Point(215, 91);
             this.txt_endereco.Name = "txt_endereco";
-            this.txt_endereco.Size = new System.Drawing.Size(153, 20);
+            this.txt_endereco.Size = new System.Drawing.Size(153, 22);
             this.txt_endereco.TabIndex = 45;
             // 
             // txt_email
             // 
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.Location = new System.Drawing.Point(8, 242);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(360, 20);
+            this.txt_email.Size = new System.Drawing.Size(360, 22);
             this.txt_email.TabIndex = 44;
             // 
             // txt_cnpj
             // 
+            this.txt_cnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cnpj.Location = new System.Drawing.Point(6, 91);
             this.txt_cnpj.Name = "txt_cnpj";
-            this.txt_cnpj.Size = new System.Drawing.Size(138, 20);
+            this.txt_cnpj.Size = new System.Drawing.Size(138, 22);
             this.txt_cnpj.TabIndex = 43;
             // 
             // txt_cidade
             // 
+            this.txt_cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cidade.Location = new System.Drawing.Point(215, 145);
             this.txt_cidade.Name = "txt_cidade";
-            this.txt_cidade.Size = new System.Drawing.Size(153, 20);
+            this.txt_cidade.Size = new System.Drawing.Size(153, 22);
             this.txt_cidade.TabIndex = 29;
             // 
             // label7
@@ -182,9 +188,10 @@
             // 
             // txt_bairro
             // 
+            this.txt_bairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bairro.Location = new System.Drawing.Point(6, 145);
             this.txt_bairro.Name = "txt_bairro";
-            this.txt_bairro.Size = new System.Drawing.Size(138, 20);
+            this.txt_bairro.Size = new System.Drawing.Size(138, 22);
             this.txt_bairro.TabIndex = 25;
             // 
             // label4
@@ -229,9 +236,10 @@
             // 
             // txt_empresa
             // 
+            this.txt_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_empresa.Location = new System.Drawing.Point(6, 36);
             this.txt_empresa.Name = "txt_empresa";
-            this.txt_empresa.Size = new System.Drawing.Size(365, 20);
+            this.txt_empresa.Size = new System.Drawing.Size(365, 22);
             this.txt_empresa.TabIndex = 18;
             // 
             // label6

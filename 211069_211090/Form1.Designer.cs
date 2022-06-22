@@ -89,9 +89,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(34, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 35);
+            this.label1.Size = new System.Drawing.Size(372, 35);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Sistema Vendas";
+            this.label1.Text = "Sistema Supermercado";
             // 
             // btnMaximizar
             // 

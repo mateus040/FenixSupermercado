@@ -102,9 +102,11 @@
             // 
             // txt_codigo
             // 
+            this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codigo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_codigo.Location = new System.Drawing.Point(7, 101);
             this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Size = new System.Drawing.Size(120, 20);
+            this.txt_codigo.Size = new System.Drawing.Size(120, 22);
             this.txt_codigo.TabIndex = 25;
             // 
             // label4
@@ -119,9 +121,11 @@
             // 
             // txt_quantidade
             // 
+            this.txt_quantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_quantidade.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_quantidade.Location = new System.Drawing.Point(218, 102);
             this.txt_quantidade.Name = "txt_quantidade";
-            this.txt_quantidade.Size = new System.Drawing.Size(155, 20);
+            this.txt_quantidade.Size = new System.Drawing.Size(155, 22);
             this.txt_quantidade.TabIndex = 23;
             // 
             // label3
@@ -136,10 +140,11 @@
             // 
             // txt_valor
             // 
-            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_valor.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_valor.Location = new System.Drawing.Point(9, 160);
             this.txt_valor.Name = "txt_valor";
-            this.txt_valor.Size = new System.Drawing.Size(140, 26);
+            this.txt_valor.Size = new System.Drawing.Size(140, 22);
             this.txt_valor.TabIndex = 21;
             // 
             // label2
@@ -164,9 +169,11 @@
             // 
             // txt_nome_produto
             // 
+            this.txt_nome_produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nome_produto.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_nome_produto.Location = new System.Drawing.Point(8, 39);
             this.txt_nome_produto.Name = "txt_nome_produto";
-            this.txt_nome_produto.Size = new System.Drawing.Size(365, 20);
+            this.txt_nome_produto.Size = new System.Drawing.Size(365, 22);
             this.txt_nome_produto.TabIndex = 18;
             // 
             // label6

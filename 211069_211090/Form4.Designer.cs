@@ -79,30 +79,34 @@
             // 
             // txt_cargo
             // 
+            this.txt_cargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cargo.Location = new System.Drawing.Point(215, 96);
             this.txt_cargo.Name = "txt_cargo";
-            this.txt_cargo.Size = new System.Drawing.Size(153, 20);
+            this.txt_cargo.Size = new System.Drawing.Size(153, 22);
             this.txt_cargo.TabIndex = 45;
             // 
             // txt_telefone
             // 
+            this.txt_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefone.Location = new System.Drawing.Point(8, 212);
             this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(153, 20);
+            this.txt_telefone.Size = new System.Drawing.Size(153, 22);
             this.txt_telefone.TabIndex = 44;
             // 
             // txt_cpf
             // 
+            this.txt_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cpf.Location = new System.Drawing.Point(6, 96);
             this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(117, 20);
+            this.txt_cpf.Size = new System.Drawing.Size(117, 22);
             this.txt_cpf.TabIndex = 43;
             // 
             // txt_cidade
             // 
+            this.txt_cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cidade.Location = new System.Drawing.Point(216, 212);
             this.txt_cidade.Name = "txt_cidade";
-            this.txt_cidade.Size = new System.Drawing.Size(153, 20);
+            this.txt_cidade.Size = new System.Drawing.Size(153, 22);
             this.txt_cidade.TabIndex = 29;
             // 
             // label7
@@ -138,9 +142,10 @@
             // 
             // txt_email
             // 
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.Location = new System.Drawing.Point(6, 150);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(364, 20);
+            this.txt_email.Size = new System.Drawing.Size(364, 22);
             this.txt_email.TabIndex = 25;
             // 
             // label4
@@ -185,9 +190,10 @@
             // 
             // txt_nome
             // 
+            this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nome.Location = new System.Drawing.Point(6, 41);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(365, 20);
+            this.txt_nome.Size = new System.Drawing.Size(365, 22);
             this.txt_nome.TabIndex = 18;
             // 
             // label6
