@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Limpar = new System.Windows.Forms.Button();
+            this.txt_funcao = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_cep = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txt_endereco = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_cnpj = new System.Windows.Forms.TextBox();
@@ -44,10 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_empresa = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_cep = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_funcao = new System.Windows.Forms.TextBox();
             this.listView_Funcionarios = new System.Windows.Forms.ListView();
             this.empresa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cnpj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -55,9 +54,10 @@
             this.bairro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cep = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label10 = new System.Windows.Forms.Label();
             this.funcao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label10 = new System.Windows.Forms.Label();
+            this.btn_finalizar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +67,6 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txt_cep);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.btn_Limpar);
             this.groupBox1.Controls.Add(this.txt_endereco);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_cnpj);
@@ -87,15 +86,39 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
-            // btn_Limpar
+            // txt_funcao
             // 
-            this.btn_Limpar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Limpar.Location = new System.Drawing.Point(8, 278);
-            this.btn_Limpar.Name = "btn_Limpar";
-            this.btn_Limpar.Size = new System.Drawing.Size(115, 38);
-            this.btn_Limpar.TabIndex = 46;
-            this.btn_Limpar.Text = "Limpar";
-            this.btn_Limpar.UseVisualStyleBackColor = true;
+            this.txt_funcao.Location = new System.Drawing.Point(215, 193);
+            this.txt_funcao.Name = "txt_funcao";
+            this.txt_funcao.Size = new System.Drawing.Size(153, 20);
+            this.txt_funcao.TabIndex = 50;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(211, 174);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 16);
+            this.label9.TabIndex = 49;
+            this.label9.Text = "Função:";
+            // 
+            // txt_cep
+            // 
+            this.txt_cep.Location = new System.Drawing.Point(7, 193);
+            this.txt_cep.Name = "txt_cep";
+            this.txt_cep.Size = new System.Drawing.Size(138, 20);
+            this.txt_cep.TabIndex = 48;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 174);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 16);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "CEP:";
             // 
             // txt_endereco
             // 
@@ -138,7 +161,7 @@
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(253, 277);
+            this.btn_cadastrar.Location = new System.Drawing.Point(124, 276);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -220,40 +243,6 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "Cadastro de Fornecedor";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 174);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 16);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "CEP:";
-            // 
-            // txt_cep
-            // 
-            this.txt_cep.Location = new System.Drawing.Point(7, 193);
-            this.txt_cep.Name = "txt_cep";
-            this.txt_cep.Size = new System.Drawing.Size(138, 20);
-            this.txt_cep.TabIndex = 48;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(211, 174);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 16);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Função:";
-            // 
-            // txt_funcao
-            // 
-            this.txt_funcao.Location = new System.Drawing.Point(215, 193);
-            this.txt_funcao.Name = "txt_funcao";
-            this.txt_funcao.Size = new System.Drawing.Size(153, 20);
-            this.txt_funcao.TabIndex = 50;
-            // 
             // listView_Funcionarios
             // 
             this.listView_Funcionarios.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -303,16 +292,6 @@
             this.cep.Text = "CEP";
             this.cep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(594, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 32);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Registros";
-            // 
             // funcao
             // 
             this.funcao.Text = "Função";
@@ -323,11 +302,33 @@
             this.email.Text = "Email";
             this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(594, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(120, 32);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Registros";
+            // 
+            // btn_finalizar
+            // 
+            this.btn_finalizar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finalizar.Location = new System.Drawing.Point(794, 400);
+            this.btn_finalizar.Name = "btn_finalizar";
+            this.btn_finalizar.Size = new System.Drawing.Size(115, 38);
+            this.btn_finalizar.TabIndex = 43;
+            this.btn_finalizar.Text = "Finalizar";
+            this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 439);
+            this.ClientSize = new System.Drawing.Size(921, 444);
+            this.Controls.Add(this.btn_finalizar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.listView_Funcionarios);
             this.Controls.Add(this.groupBox1);
@@ -344,7 +345,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_Limpar;
         private System.Windows.Forms.TextBox txt_endereco;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_cnpj;
@@ -373,5 +373,6 @@
         private System.Windows.Forms.ColumnHeader funcao;
         private System.Windows.Forms.ColumnHeader email;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn_finalizar;
     }
 }

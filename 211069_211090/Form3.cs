@@ -45,6 +45,13 @@ namespace _211069_211090
             vendas.SubItems.Add(txt_quantidade.Text);
             vendas.SubItems.Add(txt_valor.Text);
             list_Vendas.Items.Add(vendas);
+
+            txt_nome_produto.Clear();
+            txt_codigo.Clear();
+            txt_quantidade.Clear();
+            txt_valor.Clear();
+
+            txt_nome_produto.Focus();
         }
 
         private void btn_receber_Click(object sender, EventArgs e)

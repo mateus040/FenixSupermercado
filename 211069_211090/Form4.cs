@@ -33,10 +33,7 @@ namespace _211069_211090
             funcionarios.SubItems.Add(txt_telefone.Text);
             funcionarios.SubItems.Add(txt_cidade.Text);
             listView_Funcionarios.Items.Add(funcionarios);
-        }
 
-        private void btn_Limpar_Click(object sender, EventArgs e)
-        {
             txt_nome.Clear();
             txt_telefone.Clear();
             txt_cargo.Clear();
@@ -44,6 +41,7 @@ namespace _211069_211090
             txt_email.Clear();
             txt_cidade.Clear();
 
+            txt_nome.Focus();
         }
 
         private void btn_finalizar_Click(object sender, EventArgs e)

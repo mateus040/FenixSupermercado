@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Limpar = new System.Windows.Forms.Button();
             this.txt_cargo = new System.Windows.Forms.TextBox();
             this.txt_telefone = new System.Windows.Forms.TextBox();
             this.txt_cpf = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_Limpar);
             this.groupBox1.Controls.Add(this.txt_cargo);
             this.groupBox1.Controls.Add(this.txt_telefone);
             this.groupBox1.Controls.Add(this.txt_cpf);
@@ -77,17 +75,6 @@
             this.groupBox1.Size = new System.Drawing.Size(377, 313);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
-            // 
-            // btn_Limpar
-            // 
-            this.btn_Limpar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Limpar.Location = new System.Drawing.Point(8, 264);
-            this.btn_Limpar.Name = "btn_Limpar";
-            this.btn_Limpar.Size = new System.Drawing.Size(115, 38);
-            this.btn_Limpar.TabIndex = 46;
-            this.btn_Limpar.Text = "Limpar";
-            this.btn_Limpar.UseVisualStyleBackColor = true;
-            this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
             // 
             // txt_cargo
             // 
@@ -130,7 +117,7 @@
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(253, 264);
+            this.btn_cadastrar.Location = new System.Drawing.Point(127, 257);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -325,6 +312,5 @@
         private System.Windows.Forms.ColumnHeader cidade;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_finalizar;
-        private System.Windows.Forms.Button btn_Limpar;
     }
 }
