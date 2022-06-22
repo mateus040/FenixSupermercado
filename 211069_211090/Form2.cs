@@ -19,6 +19,14 @@ namespace _211069_211090
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
+            string nome = txt_nome.Text;
+            int cpf = int.Parse(txt_cpf.Text);
+            int data = int.Parse(txt_data.Text);
+            string email = txt_email.Text;
+            int telefone = int.Parse(txt_telefone.Text);
+            string cidade = txt_cidade.Text;
+
+
             ListViewItem clientes = new ListViewItem(txt_nome.Text);
             clientes.SubItems.Add(txt_cpf.Text);
             clientes.SubItems.Add(txt_data.Text);
@@ -29,7 +37,6 @@ namespace _211069_211090
 
             txt_nome.Clear();
             txt_cpf.Clear();
-            txt_data.Clear();
             txt_email.Clear();
             txt_telefone.Clear();
             txt_cidade.Clear();

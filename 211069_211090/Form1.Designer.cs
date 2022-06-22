@@ -37,7 +37,7 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnContas = new System.Windows.Forms.Button();
-            this.btnCompras = new System.Windows.Forms.Button();
+            this.btnFuncionario = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
@@ -144,7 +144,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SkyBlue;
             this.panelMenu.Controls.Add(this.btnContas);
-            this.panelMenu.Controls.Add(this.btnCompras);
+            this.panelMenu.Controls.Add(this.btnFuncionario);
             this.panelMenu.Controls.Add(this.btnVendas);
             this.panelMenu.Controls.Add(this.btnClientes);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -172,25 +172,25 @@
             this.btnContas.Text = "Contas";
             this.btnContas.UseVisualStyleBackColor = false;
             // 
-            // btnCompras
+            // btnFuncionario
             // 
-            this.btnCompras.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnCompras.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCompras.FlatAppearance.BorderSize = 0;
-            this.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompras.ForeColor = System.Drawing.Color.Black;
-            this.btnCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnCompras.Image")));
-            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompras.Location = new System.Drawing.Point(6, 204);
-            this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(187, 50);
-            this.btnCompras.TabIndex = 2;
-            this.btnCompras.Text = "Registros";
-            this.btnCompras.UseVisualStyleBackColor = false;
-            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
+            this.btnFuncionario.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnFuncionario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnFuncionario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionario.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionario.ForeColor = System.Drawing.Color.Black;
+            this.btnFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionario.Image")));
+            this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFuncionario.Location = new System.Drawing.Point(0, 193);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(216, 70);
+            this.btnFuncionario.TabIndex = 2;
+            this.btnFuncionario.Text = "Funcionários";
+            this.btnFuncionario.UseVisualStyleBackColor = false;
+            this.btnFuncionario.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // btnVendas
             // 
@@ -269,7 +269,7 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Button btnCompras;
+        private System.Windows.Forms.Button btnFuncionario;
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button btnContas;
         private System.Windows.Forms.Panel panelConteudo;

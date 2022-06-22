@@ -17,10 +17,5 @@ namespace _211069_211090
             InitializeComponent();
         }
 
-        public Form4(string valor)
-        {
-            InitializeComponent();
-            lbl_total.Text = valor;
-        }
     }
 }

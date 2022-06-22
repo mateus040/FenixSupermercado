@@ -32,13 +32,10 @@
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_cpf = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_data = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_telefone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_cidade = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,6 +49,9 @@
             this.cidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
             this.btn_finalizar = new System.Windows.Forms.Button();
+            this.txt_cpf = new System.Windows.Forms.TextBox();
+            this.txt_telefone = new System.Windows.Forms.TextBox();
+            this.txt_data = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,29 +92,15 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "CPF:";
             // 
-            // txt_cpf
-            // 
-            this.txt_cpf.Location = new System.Drawing.Point(6, 98);
-            this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(140, 20);
-            this.txt_cpf.TabIndex = 21;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(211, 77);
+            this.label3.Location = new System.Drawing.Point(215, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 22;
             this.label3.Text = "Data Nascimento:";
-            // 
-            // txt_data
-            // 
-            this.txt_data.Location = new System.Drawing.Point(215, 98);
-            this.txt_data.Name = "txt_data";
-            this.txt_data.Size = new System.Drawing.Size(155, 20);
-            this.txt_data.TabIndex = 23;
             // 
             // label4
             // 
@@ -143,13 +129,6 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Telefone:";
             // 
-            // txt_telefone
-            // 
-            this.txt_telefone.Location = new System.Drawing.Point(6, 211);
-            this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(140, 20);
-            this.txt_telefone.TabIndex = 27;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -169,16 +148,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_data);
+            this.groupBox1.Controls.Add(this.txt_telefone);
+            this.groupBox1.Controls.Add(this.txt_cpf);
             this.groupBox1.Controls.Add(this.txt_cidade);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txt_telefone);
             this.groupBox1.Controls.Add(this.btn_cadastrar);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txt_data);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_cpf);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_nome);
@@ -267,6 +246,27 @@
             this.btn_finalizar.UseVisualStyleBackColor = true;
             this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
+            // txt_cpf
+            // 
+            this.txt_cpf.Location = new System.Drawing.Point(6, 96);
+            this.txt_cpf.Name = "txt_cpf";
+            this.txt_cpf.Size = new System.Drawing.Size(117, 20);
+            this.txt_cpf.TabIndex = 43;
+            // 
+            // txt_telefone
+            // 
+            this.txt_telefone.Location = new System.Drawing.Point(8, 212);
+            this.txt_telefone.Name = "txt_telefone";
+            this.txt_telefone.Size = new System.Drawing.Size(153, 20);
+            this.txt_telefone.TabIndex = 44;
+            // 
+            // txt_data
+            // 
+            this.txt_data.Location = new System.Drawing.Point(216, 96);
+            this.txt_data.Name = "txt_data";
+            this.txt_data.Size = new System.Drawing.Size(153, 20);
+            this.txt_data.TabIndex = 45;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,13 +291,10 @@
         private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_data;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_telefone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_cidade;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -311,5 +308,9 @@
         private System.Windows.Forms.ColumnHeader cidade;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_finalizar;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txt_cpf;
+        private System.Windows.Forms.TextBox txt_telefone;
+        private System.Windows.Forms.TextBox txt_data;
     }
 }

@@ -59,8 +59,6 @@ namespace _211069_211090
 
         private void btn_pagLimpar_Click(object sender, EventArgs e)
         {
-            Form4 formDestino = new Form4(lbl_valorTotal.Text);
-
             this.Close();
         }
     }
