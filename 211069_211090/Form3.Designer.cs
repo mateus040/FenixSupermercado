@@ -72,6 +72,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btn_calcular);
             this.groupBox1.Controls.Add(this.btn_vendasLimpar);
             this.groupBox1.Controls.Add(this.txt_codigo);
@@ -170,6 +171,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(154, 25);
@@ -241,6 +243,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(555, 25);
@@ -272,6 +275,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.Controls.Add(this.btn_pagLimpar);
             this.groupBox3.Controls.Add(this.btn_receber);
             this.groupBox3.Controls.Add(this.lbl_valorTotal);
@@ -289,6 +293,7 @@
             // 
             // list_Vendas
             // 
+            this.list_Vendas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.list_Vendas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nome_produto,
             this.codigo,
@@ -334,6 +339,7 @@
             this.Controls.Add(this.label6);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);

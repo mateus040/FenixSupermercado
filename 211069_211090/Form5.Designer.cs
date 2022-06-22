@@ -63,6 +63,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.txt_funcao);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txt_cep);
@@ -80,7 +81,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_empresa);
-            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Location = new System.Drawing.Point(12, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(377, 328);
             this.groupBox1.TabIndex = 34;
@@ -235,9 +236,10 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(56, 18);
+            this.label6.Location = new System.Drawing.Point(56, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(287, 32);
             this.label6.TabIndex = 33;
@@ -245,6 +247,7 @@
             // 
             // listView_Funcionarios
             // 
+            this.listView_Funcionarios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listView_Funcionarios.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.empresa,
             this.cnpj,
@@ -255,7 +258,7 @@
             this.funcao,
             this.email});
             this.listView_Funcionarios.HideSelection = false;
-            this.listView_Funcionarios.Location = new System.Drawing.Point(413, 71);
+            this.listView_Funcionarios.Location = new System.Drawing.Point(413, 77);
             this.listView_Funcionarios.Name = "listView_Funcionarios";
             this.listView_Funcionarios.Size = new System.Drawing.Size(496, 323);
             this.listView_Funcionarios.TabIndex = 41;
@@ -304,9 +307,10 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(594, 18);
+            this.label10.Location = new System.Drawing.Point(594, 24);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(120, 32);
             this.label10.TabIndex = 42;
@@ -314,8 +318,9 @@
             // 
             // btn_finalizar
             // 
+            this.btn_finalizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_finalizar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_finalizar.Location = new System.Drawing.Point(794, 400);
+            this.btn_finalizar.Location = new System.Drawing.Point(794, 411);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(115, 38);
             this.btn_finalizar.TabIndex = 43;
@@ -327,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 444);
+            this.ClientSize = new System.Drawing.Size(921, 457);
             this.Controls.Add(this.btn_finalizar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.listView_Funcionarios);
@@ -335,6 +340,7 @@
             this.Controls.Add(this.label6);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

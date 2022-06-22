@@ -57,9 +57,10 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(75, 9);
+            this.label6.Location = new System.Drawing.Point(115, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(247, 32);
             this.label6.TabIndex = 17;
@@ -67,9 +68,10 @@
             // 
             // txt_nome
             // 
+            this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nome.Location = new System.Drawing.Point(6, 41);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(365, 20);
+            this.txt_nome.Size = new System.Drawing.Size(365, 22);
             this.txt_nome.TabIndex = 18;
             // 
             // label1
@@ -114,9 +116,10 @@
             // 
             // txt_email
             // 
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.Location = new System.Drawing.Point(6, 150);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(364, 20);
+            this.txt_email.Size = new System.Drawing.Size(364, 22);
             this.txt_email.TabIndex = 25;
             // 
             // label5
@@ -141,13 +144,15 @@
             // 
             // txt_cidade
             // 
+            this.txt_cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cidade.Location = new System.Drawing.Point(216, 212);
             this.txt_cidade.Name = "txt_cidade";
-            this.txt_cidade.Size = new System.Drawing.Size(153, 20);
+            this.txt_cidade.Size = new System.Drawing.Size(153, 22);
             this.txt_cidade.TabIndex = 29;
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.txt_data);
             this.groupBox1.Controls.Add(this.txt_telefone);
             this.groupBox1.Controls.Add(this.txt_cpf);
@@ -161,7 +166,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_nome);
-            this.groupBox1.Location = new System.Drawing.Point(12, 52);
+            this.groupBox1.Location = new System.Drawing.Point(52, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(377, 294);
             this.groupBox1.TabIndex = 30;
@@ -180,6 +185,7 @@
             // 
             // listView_Clientes
             // 
+            this.listView_Clientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listView_Clientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nome,
             this.cpf,
@@ -188,7 +194,7 @@
             this.telefone,
             this.cidade});
             this.listView_Clientes.HideSelection = false;
-            this.listView_Clientes.Location = new System.Drawing.Point(412, 61);
+            this.listView_Clientes.Location = new System.Drawing.Point(452, 69);
             this.listView_Clientes.Name = "listView_Clientes";
             this.listView_Clientes.Size = new System.Drawing.Size(375, 285);
             this.listView_Clientes.TabIndex = 38;
@@ -227,9 +233,10 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(532, 9);
+            this.label8.Location = new System.Drawing.Point(572, 17);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 32);
             this.label8.TabIndex = 37;
@@ -237,8 +244,9 @@
             // 
             // btn_finalizar
             // 
+            this.btn_finalizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_finalizar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_finalizar.Location = new System.Drawing.Point(672, 355);
+            this.btn_finalizar.Location = new System.Drawing.Point(712, 363);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(115, 38);
             this.btn_finalizar.TabIndex = 39;
@@ -248,30 +256,33 @@
             // 
             // txt_cpf
             // 
+            this.txt_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cpf.Location = new System.Drawing.Point(6, 96);
             this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(117, 20);
+            this.txt_cpf.Size = new System.Drawing.Size(117, 22);
             this.txt_cpf.TabIndex = 43;
             // 
             // txt_telefone
             // 
+            this.txt_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefone.Location = new System.Drawing.Point(8, 212);
             this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(153, 20);
+            this.txt_telefone.Size = new System.Drawing.Size(153, 22);
             this.txt_telefone.TabIndex = 44;
             // 
             // txt_data
             // 
+            this.txt_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_data.Location = new System.Drawing.Point(216, 96);
             this.txt_data.Name = "txt_data";
-            this.txt_data.Size = new System.Drawing.Size(153, 20);
+            this.txt_data.Size = new System.Drawing.Size(153, 22);
             this.txt_data.TabIndex = 45;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 401);
+            this.ClientSize = new System.Drawing.Size(879, 416);
             this.Controls.Add(this.btn_finalizar);
             this.Controls.Add(this.listView_Clientes);
             this.Controls.Add(this.label8);
@@ -279,6 +290,7 @@
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

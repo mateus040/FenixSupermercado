@@ -50,7 +50,7 @@
             // 
             // panelCabecalho
             // 
-            this.panelCabecalho.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panelCabecalho.BackColor = System.Drawing.Color.Brown;
             this.panelCabecalho.Controls.Add(this.btn_restaurar);
             this.panelCabecalho.Controls.Add(this.label1);
             this.panelCabecalho.Controls.Add(this.btnMaximizar);
@@ -85,10 +85,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 18);
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(34, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 39);
+            this.label1.Size = new System.Drawing.Size(261, 35);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sistema Vendas";
             // 
@@ -145,7 +146,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.SkyBlue;
+            this.panelMenu.BackColor = System.Drawing.Color.LightCoral;
             this.panelMenu.Controls.Add(this.btnFornecedor);
             this.panelMenu.Controls.Add(this.btnFuncionario);
             this.panelMenu.Controls.Add(this.btnVendas);
@@ -158,19 +159,19 @@
             // 
             // btnFornecedor
             // 
-            this.btnFornecedor.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnFornecedor.BackColor = System.Drawing.Color.LightCoral;
             this.btnFornecedor.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnFornecedor.FlatAppearance.BorderSize = 0;
             this.btnFornecedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFornecedor.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedor.ForeColor = System.Drawing.Color.Black;
             this.btnFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("btnFornecedor.Image")));
             this.btnFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFornecedor.Location = new System.Drawing.Point(5, 286);
+            this.btnFornecedor.Location = new System.Drawing.Point(0, 286);
             this.btnFornecedor.Name = "btnFornecedor";
-            this.btnFornecedor.Size = new System.Drawing.Size(205, 50);
+            this.btnFornecedor.Size = new System.Drawing.Size(210, 50);
             this.btnFornecedor.TabIndex = 3;
             this.btnFornecedor.Text = "Fornecedor";
             this.btnFornecedor.UseVisualStyleBackColor = false;
@@ -178,11 +179,11 @@
             // 
             // btnFuncionario
             // 
-            this.btnFuncionario.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnFuncionario.BackColor = System.Drawing.Color.LightCoral;
             this.btnFuncionario.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnFuncionario.FlatAppearance.BorderSize = 0;
             this.btnFuncionario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFuncionario.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFuncionario.ForeColor = System.Drawing.Color.Black;
@@ -190,7 +191,7 @@
             this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFuncionario.Location = new System.Drawing.Point(0, 193);
             this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(216, 70);
+            this.btnFuncionario.Size = new System.Drawing.Size(230, 70);
             this.btnFuncionario.TabIndex = 2;
             this.btnFuncionario.Text = "Funcionários";
             this.btnFuncionario.UseVisualStyleBackColor = false;
@@ -198,19 +199,19 @@
             // 
             // btnVendas
             // 
-            this.btnVendas.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnVendas.BackColor = System.Drawing.Color.LightCoral;
             this.btnVendas.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnVendas.FlatAppearance.BorderSize = 0;
             this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendas.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.Black;
             this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(6, 119);
+            this.btnVendas.Location = new System.Drawing.Point(0, 119);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(177, 45);
+            this.btnVendas.Size = new System.Drawing.Size(184, 45);
             this.btnVendas.TabIndex = 1;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = false;
@@ -218,19 +219,19 @@
             // 
             // btnClientes
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnClientes.BackColor = System.Drawing.Color.LightCoral;
             this.btnClientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnClientes.FlatAppearance.BorderSize = 0;
             this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.Black;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(3, 35);
+            this.btnClientes.Location = new System.Drawing.Point(0, 35);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(180, 45);
+            this.btnClientes.Size = new System.Drawing.Size(184, 45);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
@@ -238,7 +239,9 @@
             // 
             // panelConteudo
             // 
+            this.panelConteudo.BackColor = System.Drawing.Color.SeaShell;
             this.panelConteudo.Controls.Add(this.pictureBox1);
+            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(180, 74);
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(620, 449);
@@ -246,9 +249,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(42, 61);
             this.pictureBox1.Name = "pictureBox1";
