@@ -41,8 +41,11 @@
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCabecalho.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            this.panelConteudo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCabecalho
@@ -235,11 +238,24 @@
             // 
             // panelConteudo
             // 
-            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelConteudo.Controls.Add(this.pictureBox1);
             this.panelConteudo.Location = new System.Drawing.Point(180, 74);
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(620, 449);
             this.panelConteudo.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(42, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(539, 311);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -257,6 +273,8 @@
             this.panelCabecalho.ResumeLayout(false);
             this.panelCabecalho.PerformLayout();
             this.panelMenu.ResumeLayout(false);
+            this.panelConteudo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,6 +293,7 @@
         private System.Windows.Forms.Button btnFornecedor;
         private System.Windows.Forms.Button btn_restaurar;
         public System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
