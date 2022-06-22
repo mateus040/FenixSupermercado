@@ -45,6 +45,18 @@ namespace _211069_211090
 
         }
 
+        private void btn_Limpar_Click(object sender, EventArgs e)
+        {
+            txt_nome.Clear();
+            txt_cpf.Clear();
+            txt_email.Clear();
+            txt_data.Clear();
+            txt_cidade.Clear();
+            txt_telefone.Clear();
+
+            txt_nome.Focus();
+        }
+
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
             this.Close();

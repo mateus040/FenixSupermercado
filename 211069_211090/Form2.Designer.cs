@@ -52,6 +52,7 @@
             this.txt_cpf = new System.Windows.Forms.TextBox();
             this.txt_telefone = new System.Windows.Forms.TextBox();
             this.txt_data = new System.Windows.Forms.TextBox();
+            this.btn_Limpar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +149,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_Limpar);
             this.groupBox1.Controls.Add(this.txt_data);
             this.groupBox1.Controls.Add(this.txt_telefone);
             this.groupBox1.Controls.Add(this.txt_cpf);
@@ -170,7 +172,7 @@
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(122, 244);
+            this.btn_cadastrar.Location = new System.Drawing.Point(254, 250);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -267,6 +269,17 @@
             this.txt_data.Size = new System.Drawing.Size(153, 20);
             this.txt_data.TabIndex = 45;
             // 
+            // btn_Limpar
+            // 
+            this.btn_Limpar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpar.Location = new System.Drawing.Point(8, 250);
+            this.btn_Limpar.Name = "btn_Limpar";
+            this.btn_Limpar.Size = new System.Drawing.Size(115, 38);
+            this.btn_Limpar.TabIndex = 46;
+            this.btn_Limpar.Text = "Limpar";
+            this.btn_Limpar.UseVisualStyleBackColor = true;
+            this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,5 +325,6 @@
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.TextBox txt_telefone;
         private System.Windows.Forms.TextBox txt_data;
+        private System.Windows.Forms.Button btn_Limpar;
     }
 }

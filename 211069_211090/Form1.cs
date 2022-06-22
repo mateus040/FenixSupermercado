@@ -95,6 +95,11 @@ namespace _211069_211090
             AbrirFormNoPapel<Form4>();
         }
 
+        private void btnFornecedor_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPapel<Form5>();
+        }
+
         private void panelCabecalho_MouseDown(object sender, MouseEventArgs e)
         {
             mover = true;

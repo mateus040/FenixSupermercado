@@ -36,7 +36,7 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnContas = new System.Windows.Forms.Button();
+            this.btnFornecedor = new System.Windows.Forms.Button();
             this.btnFuncionario = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -143,7 +143,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SkyBlue;
-            this.panelMenu.Controls.Add(this.btnContas);
+            this.panelMenu.Controls.Add(this.btnFornecedor);
             this.panelMenu.Controls.Add(this.btnFuncionario);
             this.panelMenu.Controls.Add(this.btnVendas);
             this.panelMenu.Controls.Add(this.btnClientes);
@@ -153,24 +153,25 @@
             this.panelMenu.Size = new System.Drawing.Size(180, 449);
             this.panelMenu.TabIndex = 1;
             // 
-            // btnContas
+            // btnFornecedor
             // 
-            this.btnContas.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnContas.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnContas.FlatAppearance.BorderSize = 0;
-            this.btnContas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnContas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.btnContas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContas.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContas.ForeColor = System.Drawing.Color.Black;
-            this.btnContas.Image = ((System.Drawing.Image)(resources.GetObject("btnContas.Image")));
-            this.btnContas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContas.Location = new System.Drawing.Point(3, 286);
-            this.btnContas.Name = "btnContas";
-            this.btnContas.Size = new System.Drawing.Size(174, 50);
-            this.btnContas.TabIndex = 3;
-            this.btnContas.Text = "Contas";
-            this.btnContas.UseVisualStyleBackColor = false;
+            this.btnFornecedor.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnFornecedor.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFornecedor.FlatAppearance.BorderSize = 0;
+            this.btnFornecedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFornecedor.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedor.ForeColor = System.Drawing.Color.Black;
+            this.btnFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("btnFornecedor.Image")));
+            this.btnFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFornecedor.Location = new System.Drawing.Point(5, 286);
+            this.btnFornecedor.Name = "btnFornecedor";
+            this.btnFornecedor.Size = new System.Drawing.Size(205, 50);
+            this.btnFornecedor.TabIndex = 3;
+            this.btnFornecedor.Text = "Fornecedor";
+            this.btnFornecedor.UseVisualStyleBackColor = false;
+            this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
             // 
             // btnFuncionario
             // 
@@ -271,9 +272,9 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnFuncionario;
         private System.Windows.Forms.Button btnVendas;
-        private System.Windows.Forms.Button btnContas;
-        private System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.Button btnFornecedor;
         private System.Windows.Forms.Button btn_restaurar;
+        public System.Windows.Forms.Panel panelConteudo;
     }
 }
 

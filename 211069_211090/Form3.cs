@@ -12,9 +12,8 @@ namespace _211069_211090
 {
     public partial class Form3 : Form
     {
-        double resultado = 0;
+        public double resultado = 0;
         double troco = 0;
-
 
         public Form3()
         {
