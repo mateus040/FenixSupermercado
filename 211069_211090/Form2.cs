@@ -17,9 +17,16 @@ namespace _211069_211090
             InitializeComponent();
         }
 
-
-        private void btn_limpar_Click(object sender, EventArgs e)
+        private void btn_cadastrar_Click(object sender, EventArgs e)
         {
+            ListViewItem clientes = new ListViewItem(txt_nome.Text);
+            clientes.SubItems.Add(txt_cpf.Text);
+            clientes.SubItems.Add(txt_data.Text);
+            clientes.SubItems.Add(txt_email.Text);
+            clientes.SubItems.Add(txt_telefone.Text);
+            clientes.SubItems.Add(txt_cidade.Text);
+            listView_Clientes.Items.Add(clientes);
+
             txt_nome.Clear();
             txt_cpf.Clear();
             txt_data.Clear();
@@ -28,20 +35,6 @@ namespace _211069_211090
             txt_cidade.Clear();
 
             txt_nome.Focus();
-        }
-
-        private void btn_cadastrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
         }
     }

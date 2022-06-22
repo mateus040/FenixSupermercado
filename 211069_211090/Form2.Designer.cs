@@ -43,7 +43,14 @@
             this.txt_cidade = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_cadastrar = new System.Windows.Forms.Button();
-            this.btn_limpar = new System.Windows.Forms.Button();
+            this.listView_Clientes = new System.Windows.Forms.ListView();
+            this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.data_nasc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.telefone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,12 +58,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(277, 8);
+            this.label6.Location = new System.Drawing.Point(75, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(247, 32);
             this.label6.TabIndex = 17;
             this.label6.Text = "Cadastro de Clientes";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txt_nome
             // 
@@ -174,17 +180,16 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_nome);
-            this.groupBox1.Location = new System.Drawing.Point(214, 51);
+            this.groupBox1.Location = new System.Drawing.Point(12, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(377, 264);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(261, 336);
+            this.btn_cadastrar.Location = new System.Drawing.Point(140, 340);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -192,23 +197,70 @@
             this.btn_cadastrar.UseVisualStyleBackColor = true;
             this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
-            // btn_limpar
+            // listView_Clientes
             // 
-            this.btn_limpar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(424, 336);
-            this.btn_limpar.Name = "btn_limpar";
-            this.btn_limpar.Size = new System.Drawing.Size(115, 38);
-            this.btn_limpar.TabIndex = 32;
-            this.btn_limpar.Text = "Limpar";
-            this.btn_limpar.UseVisualStyleBackColor = true;
-            this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
+            this.listView_Clientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nome,
+            this.cpf,
+            this.data_nasc,
+            this.email,
+            this.telefone,
+            this.cidade});
+            this.listView_Clientes.HideSelection = false;
+            this.listView_Clientes.Location = new System.Drawing.Point(412, 61);
+            this.listView_Clientes.Name = "listView_Clientes";
+            this.listView_Clientes.Size = new System.Drawing.Size(375, 240);
+            this.listView_Clientes.TabIndex = 38;
+            this.listView_Clientes.UseCompatibleStateImageBehavior = false;
+            this.listView_Clientes.View = System.Windows.Forms.View.Details;
+            // 
+            // nome
+            // 
+            this.nome.Text = "Nome";
+            // 
+            // cpf
+            // 
+            this.cpf.Text = "CPF";
+            this.cpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // data_nasc
+            // 
+            this.data_nasc.Text = "Data Nasc";
+            this.data_nasc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.data_nasc.Width = 70;
+            // 
+            // email
+            // 
+            this.email.Text = "Email";
+            this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // telefone
+            // 
+            this.telefone.Text = "Telefone";
+            this.telefone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cidade
+            // 
+            this.cidade.Text = "Cidade";
+            this.cidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(532, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 32);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Registros";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 401);
-            this.Controls.Add(this.btn_limpar);
+            this.Controls.Add(this.listView_Clientes);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_cadastrar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
@@ -237,6 +289,13 @@
         private System.Windows.Forms.TextBox txt_cidade;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_cadastrar;
-        private System.Windows.Forms.Button btn_limpar;
+        public System.Windows.Forms.ListView listView_Clientes;
+        private System.Windows.Forms.ColumnHeader nome;
+        private System.Windows.Forms.ColumnHeader cpf;
+        private System.Windows.Forms.ColumnHeader data_nasc;
+        private System.Windows.Forms.ColumnHeader email;
+        private System.Windows.Forms.ColumnHeader telefone;
+        private System.Windows.Forms.ColumnHeader cidade;
+        private System.Windows.Forms.Label label8;
     }
 }

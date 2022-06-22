@@ -186,9 +186,9 @@
             this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCompras.Location = new System.Drawing.Point(6, 204);
             this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(187, 45);
+            this.btnCompras.Size = new System.Drawing.Size(187, 50);
             this.btnCompras.TabIndex = 2;
-            this.btnCompras.Text = "Compras";
+            this.btnCompras.Text = "Registros";
             this.btnCompras.UseVisualStyleBackColor = false;
             this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
