@@ -37,5 +37,10 @@ namespace _211069_211090
             txt_nome.Focus();
 
         }
+
+        private void btn_finalizar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

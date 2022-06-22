@@ -51,6 +51,7 @@
             this.telefone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_finalizar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,6 +172,7 @@
             this.groupBox1.Controls.Add(this.txt_cidade);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_telefone);
+            this.groupBox1.Controls.Add(this.btn_cadastrar);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.label4);
@@ -182,14 +184,14 @@
             this.groupBox1.Controls.Add(this.txt_nome);
             this.groupBox1.Location = new System.Drawing.Point(12, 52);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 264);
+            this.groupBox1.Size = new System.Drawing.Size(377, 294);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             // 
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(140, 340);
+            this.btn_cadastrar.Location = new System.Drawing.Point(122, 244);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(115, 38);
             this.btn_cadastrar.TabIndex = 31;
@@ -209,7 +211,7 @@
             this.listView_Clientes.HideSelection = false;
             this.listView_Clientes.Location = new System.Drawing.Point(412, 61);
             this.listView_Clientes.Name = "listView_Clientes";
-            this.listView_Clientes.Size = new System.Drawing.Size(375, 240);
+            this.listView_Clientes.Size = new System.Drawing.Size(375, 285);
             this.listView_Clientes.TabIndex = 38;
             this.listView_Clientes.UseCompatibleStateImageBehavior = false;
             this.listView_Clientes.View = System.Windows.Forms.View.Details;
@@ -254,14 +256,25 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Registros";
             // 
+            // btn_finalizar
+            // 
+            this.btn_finalizar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finalizar.Location = new System.Drawing.Point(672, 355);
+            this.btn_finalizar.Name = "btn_finalizar";
+            this.btn_finalizar.Size = new System.Drawing.Size(115, 38);
+            this.btn_finalizar.TabIndex = 39;
+            this.btn_finalizar.Text = "Finalizar";
+            this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 401);
+            this.Controls.Add(this.btn_finalizar);
             this.Controls.Add(this.listView_Clientes);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btn_cadastrar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -297,5 +310,6 @@
         private System.Windows.Forms.ColumnHeader telefone;
         private System.Windows.Forms.ColumnHeader cidade;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_finalizar;
     }
 }

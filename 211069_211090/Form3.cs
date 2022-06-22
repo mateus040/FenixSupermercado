@@ -40,6 +40,12 @@ namespace _211069_211090
             resultado += valor * quantidade;
 
             lbl_valorTotal.Text = resultado.ToString("C");
+
+            ListViewItem vendas = new ListViewItem(txt_nome_produto.Text);
+            vendas.SubItems.Add(txt_codigo.Text);
+            vendas.SubItems.Add(txt_quantidade.Text);
+            vendas.SubItems.Add(txt_valor.Text);
+            list_Vendas.Items.Add(vendas);
         }
 
         private void btn_receber_Click(object sender, EventArgs e)
@@ -53,8 +59,9 @@ namespace _211069_211090
 
         private void btn_pagLimpar_Click(object sender, EventArgs e)
         {
-            txt_valorPago.Clear();
-            lbl_troco.Text = "R$0,00";
+            Form4 formDestino = new Form4(lbl_valorTotal.Text);
+
+            this.Close();
         }
     }
 }

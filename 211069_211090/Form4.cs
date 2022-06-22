@@ -17,9 +17,10 @@ namespace _211069_211090
             InitializeComponent();
         }
 
-        private void listView_Clientes_SelectedIndexChanged(object sender, EventArgs e)
+        public Form4(string valor)
         {
-           
+            InitializeComponent();
+            lbl_total.Text = valor;
         }
     }
 }
